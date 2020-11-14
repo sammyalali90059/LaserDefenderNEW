@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     [SerializeField] float laserDelay = 0.3f;
 
     [SerializeField] GameObject laserPrefab;
+
+    Coroutine fireCoroutine;
     float xMin;
     float yMin;
     float xMax;
@@ -65,7 +67,12 @@ public class Player : MonoBehaviour
         //if a button linked to Fire1 is pressed
         if (Input.GetButtonDown("Fire1")) 
         {
-            StartCoroutine(FireContinuously());
+           fireCoroutine = StartCoroutine(FireContinuously());
+        }
+
+        if (Input.GetButtonUp("Fire1"))
+        {
+            StopCoroutine(fireCoroutine);
         }
     }
 
