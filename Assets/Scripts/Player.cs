@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
         Fire();
     }
 
-    private void Move()
+    public void Move()
     {
         //var is used as a generic variable. VS allows us to use var and it will set its type depending on the value it will have.
         // deltaX will be updated with the input that will happend on the x-axis, left and right
@@ -50,7 +50,7 @@ public class Player : MonoBehaviour
         
     }
 
-    private void SetUpMoveBoundaries()
+    public void SetUpMoveBoundaries()
     {
         //setup the boundaries of the movement according to the camera
         Camera gameCamera = Camera.main;
@@ -62,7 +62,7 @@ public class Player : MonoBehaviour
 
     }
 
-    private void Fire()
+    public void Fire()
     {
         //if a button linked to Fire1 is pressed
         if (Input.GetButtonDown("Fire1")) 
