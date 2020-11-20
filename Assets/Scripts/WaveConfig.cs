@@ -20,4 +20,40 @@ public class WaveConfig : ScriptableObject
     {
         return enemyPrefab;
     }
+
+    /*public GameObject GetPathPrefab()
+    {
+        return pathPrefab;
+    }*/
+
+    public List<Transform> GetWaypoints()
+    {
+        //creating an empty list to place each waypoint from the pathprefab inside this list
+        List<Transform> waypoints = new List<Transform>();
+
+        //Syntax for a foreach is foreach item(indicate type of item and give it a temp name) in collection
+        foreach(Transform child in pathPrefab.transform)
+        {
+            waypoints.Add(child);
+        }
+
+        return waypoints;
+    }
+
+    public float GetTimeBetweenSpawns()
+    {
+        return timeBetweenSpawns;
+    }
+    public float GetRandomSpawnRandomFactor()
+    {
+        return spawnRandomFactor;
+    }
+    public int GetNumberOfEnemies()
+    {
+        return numberOfEnemies;
+    }
+    public float GetEnemyMoveSpeed()
+    {
+        return enemyMoveSpeed;
+    }
 }
