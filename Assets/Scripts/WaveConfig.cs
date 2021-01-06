@@ -12,7 +12,9 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Enemy Wave Config")]
 public class WaveConfig : ScriptableObject
 {
+
     //the enemy
+    [SerializeField] List<WaveConfig> waveConfigs;
     [SerializeField] GameObject enemyPrefab;
 
     //the path on which to go
