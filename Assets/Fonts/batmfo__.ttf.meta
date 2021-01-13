@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 859eac6c78de0fa4f80dd5e9644cb9a2
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - BatmanForeverOutline
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d9c7a275bf0753347a68035386b574d6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
